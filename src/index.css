@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #FAFAF8;
+    color: #171717;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Accessible focus indicators */
+  *:focus-visible {
+    outline: 2px solid #315EFB;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom understated editorial styling */
+.editorial-border {
+  border-color: #E5E5E5;
+}
+
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editorial-card:hover {
+  border-color: #CCCCCC;
+}
+
+/* Minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAF8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D4D0;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A3A3A0;
+}
